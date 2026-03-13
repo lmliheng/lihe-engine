@@ -3,7 +3,7 @@
 <html lang="zh-CN" element::-webkit-scrollbar {display:none}>
 <!--element::-webkit-scrollbar {display:none}：这是一个CSS样式规则，用于隐藏网页上的滚动条。这个规则使用了WebKit浏览器的特定语法（::-webkit-scrollbar），
 这意味着它主要影响基于WebKit的浏览器，如Chrome和Safari。对于其他浏览器，可能需要使用不同的方法来隐藏滚动条。-->
-
+<body>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +11,7 @@
 	<meta name="keywords" content="里河">
 	<meta name="description" content="里河引擎，里河系列">
 	<meta name="author" content="Haven">
-	<link rel="Shortcut Icon" href="./assets/img/logo.jpg" type="image/x-icon" />
+	<link rel="Icon" href="./assets/img/logo.png" type="image/x-icon" />
 <!--Apple适配-->
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-touch-fullscreen" content="yes">
@@ -25,7 +25,7 @@
 	<script src="./assets/js/jquery.min.js" type="application/javascript"></script>
 <!--渲染部分-->
 	<link href="./assets/css/bootstrap.min.css" type="text/css" rel="stylesheet">
-	<link rel="stylesheet" href="./template/default/css/style.css?v=20240414" type="text/css">
+	<link rel="stylesheet" href="./assets/css/style.css?v=20240414" type="text/css">
 <!--使用版本控制-->
 </head>
 
@@ -48,7 +48,7 @@
 					<li data-lylme="group_3"><a>摸鱼</a><span></span></li>
                     <li data-lylme="group_4"><a>存储&邮箱</a><span></span></li>
                     <li data-lylme="group_5"><a>在线工具</a><span></span></li>
-                    <li data-lylme="group_6"><a>网站公告</a><span></span></li>
+                    
                     
 				</ul>
 			</div>
@@ -74,23 +74,18 @@
 		<div class="collapse navbar-collapse" id="navbarsExample05">
 			<ul class="navbar-nav mr-auto">
 
-				<li class="nav-item"><a class="nav-link" href="http://home.liheng.work/">主页</a></li>
-				    <li class="nav-item"><a class="nav-link" href="https://gitee.com/liheng1111/lihe-engine">开源地址</a></li>
-					<li class="nav-item"><a class="nav-link" href="./homepage/lihe/index.html">Auther</a></li>
-
-				    
+			<li class="nav-item"><a class="nav-link" href="https://github.com/lmliheng/lihe-engine">
+				<img src="./assets/img/github.png" height="25" ></a></li>
+					
 			</ul>
 
-			<div id="main">
-				<div id="show_date"></div>
-				<div id="show_time"></div>
-			</div>
+	
 		</div>
 
 	</nav>
 	<!--topbar结束-->
 	<div class="container" style="margin-top:10vh; position: relative; z-index: 100;">
-		<h2 class="title">上网，从里河开始！</h2><div id="show_time"></div><p class="content">百毒不侵八风不动、不畏一切，没错我就是里河</p>		<!--搜索开始-->
+		<!--搜索开始-->
 		<div id="search" class="s-search">
 			<div id="search-list" class="hide-type-list">
 				<div class="search-group group-a s-current" style=" margin-top: 50px;">
@@ -286,17 +281,10 @@
 
 
 
-<ul class="mylist row"><li id="group_6" class="title"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-gg00"></use></svg><sapn>网站公告</sapn></li>
-<li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://liheng.work/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-home00"></use></svg><span>官方主页</span></a></li>
-<li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="/apply" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-sq00"></use></svg><span>申请收录</span></a></li>
-
-</ul>
 
 
-<!--=============================================-->
 
-
-<div id="lytoday"></div><script src="https://lytoday.lylme.com/"></script><script src="./assets/js/bootstrap.min.js" type="application/javascript"></script>
+<script src="./assets/js/bootstrap.min.js" type="application/javascript"></script>
 <script src="./template/default/js/script.js?v=20240414"></script>
 <script src="./assets/js/svg.js"></script>
 
@@ -318,22 +306,19 @@
 
 
 
-<a  href="/apply"  title="申请收录“ target="_blant">申请收录</a> |  <a href="http://hao.liheng.work/" title="网站地图">里河引擎</a> | <a  href="http://hao.liheng.work/"  title="关于本站“ target="_blant">关于本站</a>   <br>Copyright ©2022-2024 <a href="/">Haven</a>.  All Rights Reserved.
-<p>本网站由<a href="https://www.aliyun.com/"  target="_blank"><img src="http://cdn.liheng.work/img/png/aliyun.png" height="20px"  alt="upyun" ></a>提供CDN加速/云存储服务</p>
-
-
-
-
-	<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?da909acf5145a279a505611d16ce5c30";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
+<a  href="/apply"  title="申请收录“ target="_blant">申请收录</a> |
+<a href="http://hao.liheng.work/" title="网站地图">里河引擎</a> |
+<a  href="http://hao.liheng.work/"  title="关于本站“ target="_blant">关于本站</a>   
+<br>Copyright ©2022-2024 <a href="./Component/lihe/index.html">Haven</a>.  All Rights Reserved.
 
 </div>
+
+
+
+
+
+
+</body>
+
 
 </html>
