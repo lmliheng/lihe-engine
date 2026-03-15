@@ -1,0 +1,7 @@
+{
+    "images": [
+        { "name":"背景1" , "url":"background-mac-1.jpg"}, 
+        { "name":"www.google.com" , "url":"www.google.com/favicon.ico"}, 
+        { "name":"www.weibo.com" , "url":"www.weibo.com/favicon.ico"}
+    ]
+}

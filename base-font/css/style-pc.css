@@ -1,0 +1,307 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.body {
+    /* 隐藏滚动条 */
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+
+.background-image {
+    /* CSS Position 定位，背景图片固定在顶部 */
+    position: fixed;
+
+    width: 100%;
+    height: 100%;
+
+    /* 保持原始宽高比的前提下，让内容填满整个容器，多余部分会被裁剪。 */
+    object-fit: cover;
+    object-position: center;
+    /* 背景图片层级在最底层 */
+    z-index: -1;
+}
+
+
+
+.setting-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+}
+
+/* 鼠标右键自定义菜单 未做*/
+
+.setting-button svg {
+    width: 24px;
+    height: 24px;
+    fill: #ffffff;
+}
+
+.setting-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+
+
+}
+
+
+
+/* Dropdown menu styles */
+.setting-button-menu {
+    display: flex;
+
+    width: 20%;
+    height: 60vh;
+    margin: 6px 16px;
+    padding: 12px 16px;
+    border-radius: 15px;
+
+    position: absolute;
+    background-color: #f9f9f9;
+
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+
+    display: none;
+    /* 默认隐藏子菜单 */
+    overflow: auto;
+    /* 滚轮 */
+}
+
+
+.setting-menu-item {
+    display: flex;
+
+    padding: 12px 16px;
+    border-radius: 15px;
+
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.setting-menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.upload-button {
+    background-color: transparent;
+    border: none;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+
+
+.upload-button svg {
+
+    width: 20px;
+    height: 20px;
+    fill: #8f8b8b;
+}
+
+.upload-button svg:hover {
+    width: 20px;
+    height: 20px;
+    fill: #9c2020;
+}
+
+
+
+
+/* 背景图片选择器样式 */
+.background-image-select {
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.background-image-item {
+    flex: 0 0 calc(50% - 5px);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.background-image-item:hover {
+    transform: scale(1.05);
+}
+
+.background-image-item img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid transparent;
+}
+
+.background-image-item:hover img {
+    border-color: #dbb846;
+}
+
+.background-image-item span {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #666;
+}
+
+
+.search-container {
+
+    width: 40%;
+    margin: 0 auto;
+    height: 10vh;
+    /* 父元素需要有高度 */
+
+}
+
+
+.search-input-container {
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+
+}
+
+.search-container input {
+
+    width: 80%;
+    height: 50px;
+    border: none;
+    border-radius: 24px 0 0 24px;
+    padding-left: 20px;
+    font-size: 16px;
+    caret-color: #251515;
+}
+
+.search-container button {
+
+    width: 10%;
+    height: 50px;
+    border: none;
+    background-color: #dbb846;
+    border-radius: 0 24px 24px 0;
+
+}
+
+.search-container button svg {
+    width: 28px;
+    height: 28px;
+    fill: #ffffff;
+}
+
+.search-container button:hover {
+    background-color: #c9a63a;
+    cursor: pointer;
+}
+
+.search-container input:focus {
+    outline: none;
+    /* border: none;  不能用border*/
+
+}
+
+
+
+
+.href-container {
+    display: flex;
+flex-wrap: wrap;
+
+    width: 50%;
+    height: 60vh;
+    margin: 0 auto;
+    overflow-y: auto;
+
+}
+
+.href-container text {
+    font-size: 12px;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.href-item svg {
+    width: 24px;
+    height: 24px;
+    fill: #2C2C2C;
+}
+
+
+/* 快捷方式项目样式 */
+.href-item {
+
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    width: 78px;
+    height: 50px;
+
+    
+}
+
+.href-item:hover {
+    transform: translateY(-2px);
+}
+
+.href-item-button {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease;
+}
+
+.href-item-button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.href-item-name {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+
+
+/* 快捷方式菜单样式 */
+.href-item-menu {
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 8px 0;
+    min-width: 200px;
+    height: 200px;
+    z-index: 10;
+    display: none;
+}
